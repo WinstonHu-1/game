@@ -15,6 +15,8 @@ void intro() {
   rect(230, 490, 300, 80);
   fill(0);
   text("Options", 250, 550);
+  
+  theme.play();
 }
 
 void introClicks() {
