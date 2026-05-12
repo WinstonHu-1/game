@@ -5,7 +5,7 @@ void intro() {
   rect(50, 100, 700, 110);
   fill(0);
   textSize(128);
-  text("Clicker Game", 50, 200);
+  text("Clicker Game", CENTER+50, CENTER+200);
   fill(200);
   rect(300, 340, 160, 70);
   fill(0);

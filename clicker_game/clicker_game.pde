@@ -19,6 +19,7 @@ float x,y,d;
 float vx, vy;
 int score, lives;
 
+int highScore = 0;
 
 //sound variables
 Minim minim;
