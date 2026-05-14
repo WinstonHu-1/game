@@ -1,16 +1,19 @@
-void intro() {
+void intro() 
+{
+
   noStroke();
   background(220);
+  rectMode(CENTER);
   fill(200);
-  rect(50, 100, 700, 110);
+  rect(CENTER+400, CENTER+150, 700, 110);
   fill(0);
   textSize(128);
-  text("Clicker Game", CENTER+50, CENTER+200);
+  text("Clicker Game", CENTER+400, CENTER+150);
   fill(200);
-  rect(300, 340, 160, 70);
+  rect(CENTER+300, CENTER+340, 160, 70);
   fill(0);
   textSize(80);
-  text("Start", 300, 400);
+  text("Start", CENTER+300, CENTER+400);
   fill(200);
   rect(230, 490, 300, 80);
   fill(0);

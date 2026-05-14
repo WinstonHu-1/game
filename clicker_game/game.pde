@@ -16,7 +16,7 @@ void game() {
 
   fill(0);
   textSize(30);
-  textAlign(CENTER, CENTER);
+
   rectMode(CENTER);
   text("Score:" + score, width/2, 50);
   text("Lives:" + lives, width/2, 100);
@@ -45,7 +45,7 @@ void gameClicks() {
     vy = vy * 1.1;
     success.rewind();
     success.play();
-  } else if (dist(mouseX, mouseY, 100, 100)<50) {
+  } else if (dist(mouseX, mouseY, x, y)<50) {
     mode = PAUSE;
   } else {
 
@@ -58,7 +58,8 @@ void gameClicks() {
     }
     if (lives == 0){
       score = 0;
-      lives = 3;
+      lives = 10;
+      mode = GAMEOVER;
     }
   }
   

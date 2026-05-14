@@ -19,7 +19,7 @@ float x,y,d;
 float vx, vy;
 int score, lives;
 
-int highScore = 0;
+int highScore;
 
 //sound variables
 Minim minim;
@@ -28,6 +28,7 @@ AudioPlayer theme, failure, success, gameover;
 
 void setup() {
   size(800, 800);
+  textAlign(CENTER, CENTER);
   mode = INTRO;
   
   x = width/2;
