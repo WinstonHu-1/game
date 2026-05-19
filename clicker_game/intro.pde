@@ -3,28 +3,28 @@ void intro()
 
   noStroke();
   background(220);
-  rectMode(CENTER);
+  
   fill(200);
   rect(CENTER+400, CENTER+150, 700, 110);
   fill(0);
   textSize(128);
   text("Clicker Game", CENTER+400, CENTER+150);
   fill(200);
-  rect(CENTER+300, CENTER+340, 160, 70);
+  rect(400, 340, 160, 80);
   fill(0);
   textSize(80);
-  text("Start", CENTER+300, CENTER+400);
+  text("Start", CENTER+400, CENTER+340);
   fill(200);
-  rect(230, 490, 300, 80);
+  rect(400, 490, 290, 80);
   fill(0);
-  text("Options", 250, 550);
+  text("Options", CENTER+390, CENTER+480);
   
   theme.play();
 }
 
 void introClicks() {
-  if (mouseX > 300 && mouseX < 460 && mouseY > 340 && mouseY < 410) {
-
+  if (mouseX > 400 && mouseX < 560 && mouseY > 340 && mouseY < 420) {
+    println("nathan");
     mode = GAME;
   }
 }

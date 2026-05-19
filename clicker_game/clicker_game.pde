@@ -5,7 +5,12 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-
+color selectedColour = #000000;
+color paperWhite = #FDFDFD; 
+color deepCharcoal = #1A1A1B; 
+color slateGray = #2D2D30; 
+color darkGreen = #88A096; 
+color softSilver = #E1E1E1; 
 
 
 
