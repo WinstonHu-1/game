@@ -11,7 +11,8 @@ color deepCharcoal = #1A1A1B;
 color slateGray = #2D2D30; 
 color darkGreen = #88A096; 
 color softSilver = #E1E1E1; 
-
+PImage nathan;
+PImage monkey;
 
 
 int mode;
@@ -19,7 +20,7 @@ final int INTRO = 0;
 final int GAME = 1;
 final int PAUSE = 2;
 final int GAMEOVER = 3;
-
+final int OPTIONS = 4;
 float x,y,d;
 float vx, vy;
 int score, lives;
@@ -35,7 +36,8 @@ void setup() {
   size(800, 800);
   textAlign(CENTER, CENTER);
   mode = INTRO;
-  
+  nathan = loadImage("nathan.png");
+  monkey = loadImage("monkey.png");
   x = width/2;
   y= height/2;
   d = 100;
@@ -62,7 +64,10 @@ void draw() {
     pause();
   } else if (mode == GAMEOVER) {
     gameover();
-  } else {
+    
+  } else if (mode == OPTIONS) {
+   option(); 
+  }else {
     println("Error: Mode = " + mode);
   }
 }

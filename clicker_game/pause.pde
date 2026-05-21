@@ -3,7 +3,7 @@
 void pause(){ 
   theme.pause();
   text("PAUSE",400,400);
-  text(highScore, 400, 500);
+  
 }
 
 void pauseClicks() {

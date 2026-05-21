@@ -1,12 +1,12 @@
 void gameover() {
-  background(255,0,0);
-  fill(255);
+  background(187,203,203);
+  fill(0);
   
   textSize(120);
-  text("GAMEOVER", CENTER, 200);
+  text("GAMEOVER", 400, 200);
   
-  textSize(20);
-  text("HIGH SCORE:" + highScore, CENTER, 500);
+  textSize(40);
+  text("HIGH SCORE:" + highScore, 400, 500);
 }
 
 void gameoverClicks() {

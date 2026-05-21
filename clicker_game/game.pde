@@ -1,14 +1,14 @@
 void game() {
 
 
-  background (0, 255, 0);
+  background (142, 144, 141);
 
   stroke(0);
   fill(255);
   circle(100, 100, 100);
 
 
-  fill(255);
+  fill(77,240,230);
   circle(x, y, d);
   fill(255);
   stroke(0);
@@ -17,7 +17,7 @@ void game() {
   fill(0);
   textSize(30);
 
-  rectMode(CENTER);
+ // rectMode(CENTER);
   text("Score:" + score, width/2, 50);
   text("Lives:" + lives, width/2, 100);
 
