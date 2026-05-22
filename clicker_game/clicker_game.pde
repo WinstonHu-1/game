@@ -13,7 +13,8 @@ color darkGreen = #88A096;
 color softSilver = #E1E1E1; 
 PImage nathan;
 PImage monkey;
-
+boolean nathanOn = false;
+boolean monkeyOn = false;
 
 int mode;
 final int INTRO = 0;
@@ -34,6 +35,7 @@ AudioPlayer theme, failure, success, gameover;
 
 void setup() {
   size(800, 800);
+  pixelDensity(1);
   textAlign(CENTER, CENTER);
   mode = INTRO;
   nathan = loadImage("nathan.png");
