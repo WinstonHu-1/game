@@ -9,9 +9,12 @@ float ballx,bally,balld;
 boolean wkey,skey, upkey, downkey ;
 float x,y,d;
 float vx, vy;
+int leftscore, rightscore, timer;
+
 
 void setup() {
   size(800, 800);
+  pixelDensity(1);
   mode = INTRO;
   leftx = 0;
   lefty = height/2;
