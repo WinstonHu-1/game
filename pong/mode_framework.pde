@@ -27,6 +27,7 @@ void setup() {
   ballx = width/2;
   bally = height/2;
   balld = 100;
+  timer = 50;
   
   wkey = skey = upkey = downkey = false;
   
