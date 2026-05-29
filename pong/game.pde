@@ -89,9 +89,13 @@ void game() {
     bally = 775;
   }
   
+  if (leftscore == 10) {
+    mode = GAMEOVER;
+  }
   
-  
-  
+  if (rightscore == 10) {
+    mode = GAMEOVER;
+  }
   
   
   
