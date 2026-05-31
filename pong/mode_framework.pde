@@ -10,6 +10,9 @@ boolean wkey,skey, upkey, downkey ;
 float x,y,d;
 float vx, vy;
 int leftscore, rightscore, timer;
+boolean AI;
+Minim minim;
+AudioPlayer theme, failure, success, gameover;
 
 
 void setup() {
@@ -33,6 +36,10 @@ void setup() {
   
   vx = random(-10,10);
   vy = random(-10,10);
+  minim = new Minim(this);
+  theme = minim.loadFile("MUSIC.mp3");
+  success = minim.loadFile("SUCCESS.wav");
+  failure = minim.loadFile ("FAILURE.wav");
   
 }
 
