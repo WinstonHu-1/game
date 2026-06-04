@@ -14,3 +14,12 @@ void tactile (int x, int y, int w, int h) {
     stroke(255);
   }
 }
+
+void golfBall () {
+  circle(ballX, ballY, 50);
+}
+
+void shootBall () {
+    vy = dist(mouseY, ballY, 0, 1);
+    vx = dist(mouseX -400,ballX,-1,1);
+}

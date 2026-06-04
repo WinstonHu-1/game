@@ -12,11 +12,16 @@ color red = #FF0000;
 color blue = #0000FF;
 boolean Pred;
 boolean Pblue;
+float ballX, ballY;
+float vx,vy;
 
 void setup() {
   pixelDensity(1);
   size(800, 800);
   mode = INTRO;
+  ballX = 400;
+  ballY = 650;
+
 }
 
 void draw() {
@@ -42,4 +47,8 @@ void draw() {
   else {
     println("Error: Mode = " + mode);
   }
+  
+  
+ // ballX = ballX + vx;
+  ballY = ballY - vy;
 }
