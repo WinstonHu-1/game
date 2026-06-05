@@ -14,6 +14,8 @@ boolean Pred;
 boolean Pblue;
 float ballX, ballY;
 float vx,vy;
+boolean mouseReleased = false;
+boolean mousepressed = false;
 
 void setup() {
   pixelDensity(1);
@@ -49,6 +51,8 @@ void draw() {
   }
   
   
- // ballX = ballX + vx;
-  ballY = ballY - vy;
+
+    
+  
+
 }

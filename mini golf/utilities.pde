@@ -15,11 +15,11 @@ void tactile (int x, int y, int w, int h) {
   }
 }
 
-void golfBall () {
+   void golfBall () {
   circle(ballX, ballY, 50);
 }
 
 void shootBall () {
-    vy = dist(mouseY, ballY, 0, 1);
-    vx = dist(mouseX -400,ballX,-1,1);
+    vy = dist(400, mouseY, ballX, ballY);
+    vx = dist(mouseX ,400,ballX,ballY);
 }

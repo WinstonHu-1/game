@@ -1,27 +1,30 @@
 void level1() {
-  background(37,165, 27);
+  background(37, 165, 27);
   fill(255);
   stroke(0);
   strokeWeight(15);
-  rect(200,50,400,700);
+  rect(200, 50, 400, 700);
   strokeWeight(15);
-  rect(225,75,350,650);
+  rect(225, 75, 350, 650);
   golfBall();
-  
-
-}
-void level1Clicks() {
-}
-
-void mousePressed() {
-  if (mouseX > ballX && mouseX <ballX+25 && mouseY >ballY && mouseY <ballY+25){
+if (mouseReleased == true && mousepressed == true) {
     shootBall();
+    ballY = ballY - vy;
+    ballX = ballX + vx;
+    println(vx);
+    println(vy);
+    mouseReleased = false;
+    mousepressed = false;
   }
-  
+
+  if (ballX+25 > 800 || ballX-25 <0) {
+    vx = vx * -1;
+  }
+
+  if (ballY+25 > 800 || ballY-25 <0) {
+    vy = vy * -1;
+  }
 }
 
-void mouseDragged() {
-   if (mouseX > ballX-25 && mouseY >ballY-25 ) {
-    line( ballX, ballY, mouseX, mouseY);
-  }
+void level1Clicks() {
 }

@@ -18,5 +18,21 @@ void mouseReleased() {
   }else if (mode == level5) {
     level5Clicks();
   }
+  
+  mouseReleased = true;
+
 
 }
+void mousePressed() {
+  if (mouseX > ballX && mouseX <ballX+25 && mouseY >ballY && mouseY <ballY+25){
+     mousepressed = true;
+  }
+  
+}
+
+void mouseDragged() {
+//   if (mouseX > ballX-25 && mouseY >ballY-25 ) {
+    line( ballX, ballY, mouseX, mouseY);
+//   }
+   shootBall();
+  }
