@@ -18,21 +18,21 @@ void mouseReleased() {
   }else if (mode == level5) {
     level5Clicks();
   }
-  
+  if (mousepressed == true) {
   mouseReleased = true;
-
+  }
 
 }
 void mousePressed() {
-  if (mouseX > ballX && mouseX <ballX+25 && mouseY >ballY && mouseY <ballY+25){
+  if (mouseX > ballX-25 && mouseX <ballX+25 && mouseY >ballY-25 && mouseY <ballY+25){
      mousepressed = true;
+     print("true");
   }
   
 }
 
 void mouseDragged() {
-//   if (mouseX > ballX-25 && mouseY >ballY-25 ) {
+   if (mouseX > 200 && mouseY >400 && mouseX < 600 ) {
     line( ballX, ballY, mouseX, mouseY);
-//   }
-   shootBall();
+   }
   }

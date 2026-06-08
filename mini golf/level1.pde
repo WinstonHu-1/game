@@ -7,23 +7,19 @@ void level1() {
   strokeWeight(15);
   rect(225, 75, 350, 650);
   golfBall();
-if (mouseReleased == true && mousepressed == true) {
-    shootBall();
-    ballY = ballY - vy;
-    ballX = ballX + vx;
-    println(vx);
-    println(vy);
-    mouseReleased = false;
-    mousepressed = false;
-  }
 
-  if (ballX+25 > 800 || ballX-25 <0) {
+
+  if (ballX < 25 || ballX > width-25) {
     vx = vx * -1;
   }
 
-  if (ballY+25 > 800 || ballY-25 <0) {
-    vy = vy * -1;
+  if (ballY <25 || ballY > height-25) {
+    vy = vy *-1;
   }
+  
+
+
+
 }
 
 void level1Clicks() {

@@ -16,10 +16,14 @@ void tactile (int x, int y, int w, int h) {
 }
 
    void golfBall () {
-  circle(ballX, ballY, 50);
-}
 
-void shootBall () {
-    vy = dist(400, mouseY, ballX, ballY);
-    vx = dist(mouseX ,400,ballX,ballY);
+  circle(ballX, ballY, 50);
+  if (mouseReleased == true && dist(mouseX, mouseY, ballX, ballY) < 50) {
+  vy = map(mouseY, ballX, ballY, 0, 5);
+  vx = map(mouseX ,ballX,ballY, -5, 5);
+  }
+  ballX= ballX+vx;
+  ballY = ballY-vy;
+     
+  
 }
