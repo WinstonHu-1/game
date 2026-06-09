@@ -16,6 +16,7 @@ float ballX, ballY;
 float vx,vy;
 boolean mouseReleased = false;
 boolean mousepressed = false;
+float px, py;
 
 void setup() {
   pixelDensity(1);
@@ -23,6 +24,8 @@ void setup() {
   mode = INTRO;
   ballX = 400;
   ballY = 650;
+  vx =0;
+  vy = 0;
 
 }
 

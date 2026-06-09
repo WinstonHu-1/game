@@ -1,4 +1,4 @@
-void game() {
+    void game() {
 
 }
 void gameClicks() {
