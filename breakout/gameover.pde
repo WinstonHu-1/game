@@ -1,21 +1,28 @@
 void gameover() {
-  if (leftscore> rightscore) {
-    textSize(100);
-    fill(255);
-    
-    text("Left Wins!", 200, 400);
-    
-  }else {
-    textSize(100);
-    fill(255);
-    
-    text("Right Wins!", 200, 400);
-    
+background(teal);
+
+ if (score == 28) {
+   textSize(120);
+   text("YOU WIN!", 200, 500);
+   score = 0;
+ }else if (lives == 0){
+  image(gif[f], 0, 0, width, height);
+  f=f+1;
+  if (f == frames) {
+    f = 0;
   }
+  }
+  int i = 0;
+    for ( i = 0; i <=n-1; i ++) {
+
+    alive [i] = true;
+    }
+    
+
 }
 
 void gameoverClicks(){
   mode = INTRO;
-  leftscore = 0;
-  rightscore = 0;
+    lives = 3;
+    score = 0;
 }
