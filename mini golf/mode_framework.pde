@@ -17,6 +17,7 @@ float vx,vy;
 boolean mouseReleased = false;
 boolean mousepressed = false;
 float px, py;
+float dx, dy;
 
 void setup() {
   pixelDensity(1);

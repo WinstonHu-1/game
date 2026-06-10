@@ -30,9 +30,11 @@ void mousePressed() {
 }
 
 void mouseDragged() {
-  if (dist(mouseX, mouseY, ballX, ballY) < 70) {
+  if (dist(mouseX, mouseY, ballX, ballY) < 100) {
     line(ballX,ballY,mouseX,mouseY);
-    vy = map(0, mouseY, ballY, -1, 1);
-    vx = map(0, mouseX, ballX, -1, 1);
+    distanceX();
+    distanceY();
+    vx= map(dx, -100, 100, -5, 5);
+    vy= map(dy, -100, 100, -5, 5);
   }
 }

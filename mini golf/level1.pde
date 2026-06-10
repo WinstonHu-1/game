@@ -10,14 +10,14 @@ void level1() {
   circle(400, 150, 50);
   fill(255);
   golfBall();
+    println(dist(mouseX, mouseY, ballX, ballY));
 
-
-  if (ballX < 25 || ballX > width-25) {
-    vx = vx * -1;
+  if (ballX < 250|| ballX > 550) {
+    vx = vx * -0.8;
   }
 
-  if (ballY <25 || ballY > height-25) {
-    vy = vy *-1;
+  if (ballY <100 || ballY > 700) {
+    vy = vy *-0.8;
   }
   
 

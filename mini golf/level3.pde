@@ -8,6 +8,10 @@ void level3() {
   rect(225, 75, 350, 650);
   fill(0);
   circle(400, 150, 50);
+  noFill();
+  strokeWeight(10);
+  triangle(325,450, 395, 520, 395, 380);
+  triangle(475,450, 405, 520, 405, 380);
   
 }
 void level3Clicks() {
