@@ -25,7 +25,7 @@ void mouseReleased() {
 void mousePressed() {
   if (mouseX > ballX-25 && mouseX <ballX+25 && mouseY >ballY-25 && mouseY <ballY+25) {
     mousepressed = true;
-    print("true");
+
   }
 }
 

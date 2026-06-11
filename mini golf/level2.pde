@@ -10,6 +10,33 @@ void level2() {
   circle(400, 150, 50);
   fill(255);
   rect(375,250,50,350);
+  fill(0);
+  circle(400, 150, 50);
+  fill(255);
+  if (scored == false){
+  golfBall();
+  }
+
+  if (ballX < 250|| ballX > 550) {
+    vx = vx * -0.8;
+  }
+
+  if (ballY <100 || ballY > 700) {
+    vy = vy *-0.8;
+  }
+
+  if (dist(ballX,ballY, 400, 150) <50){ 
+    fill(0);
+   text("score",400,400);
+   Pred = false;
+   Pblue = true;
+   mouseReleased = false;
+   mousepressed = false;
+       vx = 0;
+    vy = 0;
+ 
+}
 }
 void level2Clicks() {
+     mode = level2;
 }

@@ -16,8 +16,13 @@ float ballX, ballY;
 float vx,vy;
 boolean mouseReleased = false;
 boolean mousepressed = false;
+
+float vxb,vyb;
+boolean mouseReleasedb = false;
+boolean mousepressedb = false;
 float px, py;
 float dx, dy;
+boolean scored = false;
 
 void setup() {
   pixelDensity(1);
@@ -27,6 +32,7 @@ void setup() {
   ballY = 650;
   vx =0;
   vy = 0;
+  Pred = true;
 
 }
 
