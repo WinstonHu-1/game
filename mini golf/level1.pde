@@ -3,13 +3,12 @@ void level1() {
   fill(255);
   stroke(0);
   strokeWeight(15);
-  if(Pred = true){
+  if (player1 == true) {
     stroke(red);
-  } if (Pblue == true){
+  }
+  if (player1 == false) {
     stroke(blue);
     scored = false;
-    ballX = 400;
-    ballY = 650;
 
   }
   rect(200, 50, 400, 700);
@@ -19,8 +18,8 @@ void level1() {
   fill(0);
   circle(400, 150, 50);
   fill(255);
-  if (scored == false){
-  golfBall();
+  if (scored == false) {
+    golfBall();
   }
 
   if (ballX < 250|| ballX > 550) {
@@ -31,18 +30,16 @@ void level1() {
     vy = vy *-0.8;
   }
 
-  if (dist(ballX,ballY, 400, 150) <50){ 
+  if (dist(ballX, ballY, 400, 150) <50) {
     fill(0);
-   text("score",400,400);
-   Pred = false;
-   Pblue = true;
-   mouseReleased = false;
-   mousepressed = false;
-       vx = 0;
+    ballX = 400;
+   ballY = 650;
+    player1 = false;
+    mouseReleased = false;
+    mousepressed = false;
+    vx = 0;
     vy = 0;
-
-}
-  
+  }
 }
 
 

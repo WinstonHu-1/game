@@ -12,6 +12,7 @@ color red = #FF0000;
 color blue = #0000FF;
 boolean Pred;
 boolean Pblue;
+boolean player1;
 float ballX, ballY;
 float vx,vy;
 boolean mouseReleased = false;
@@ -33,6 +34,7 @@ void setup() {
   vx =0;
   vy = 0;
   Pred = true;
+  player1 = true;
 
 }
 

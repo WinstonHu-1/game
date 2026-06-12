@@ -18,18 +18,21 @@ void golfBall () {
 
   circle(ballX, ballY, 50);
   if (mouseReleased == true ) {
-    print("true");
     ballX= ballX+vx;
     ballY = ballY-vy;
+    print(vx);
+    println(vy);
   }
 }
 void golfBallb () {
 
   circle(ballX, ballY, 50);
   if (mouseReleased == true ) {
-    print("true");
+    
     ballX= ballX+vx;
     ballY = ballY-vy;
+    print(vx);
+    println(vy);
   }
 }
   void distanceX() {
