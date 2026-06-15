@@ -1,5 +1,7 @@
 void level1() {
   background(37, 165, 27);
+  textSize(30);
+  text("level 1", 100,100);
   fill(255);
   stroke(0);
   strokeWeight(15);
@@ -29,17 +31,23 @@ void level1() {
   if (ballY <100 || ballY > 700) {
     vy = vy *-0.8;
   }
+   if (dist(ballX, ballY, 400, 150) <50 && player1 == false) {
+   mode = level2;
+   player1 = true;
+ 
+ }
 
   if (dist(ballX, ballY, 400, 150) <50) {
     fill(0);
     ballX = 400;
-   ballY = 650;
+    ballY = 650;
     player1 = false;
     mouseReleased = false;
     mousepressed = false;
     vx = 0;
     vy = 0;
   }
+
 }
 
 
