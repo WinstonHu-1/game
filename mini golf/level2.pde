@@ -37,8 +37,17 @@ void level2() {
   //  if (ballX <350  || ballX < 400 && ballY < 575  || ballY <  ) {
   //     vx = vx * -0.8;
 
-  if ( ballX == 350 && ballY > 250 && ballY < 600) {
+  if ( ballX > 350 && ballY > 250 && ballY < 600 && ballX <355) {
     vx = vx * -0.8;
+  }
+    if ( ballX < 450 && ballY > 250 && ballY < 600 && ballX > 400) {
+    vx = vx * -0.8;
+  }
+  if ( ballY < 300 && ballX > 375 && ballX < 425) {
+   vy = vy * -0.8; 
+  }
+    if ( ballY < 600 && ballX > 375 && ballX < 425) {
+   vy = vy * -0.8; 
   }
 
 
