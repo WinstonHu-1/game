@@ -20,8 +20,8 @@ void golfBall () {
   if (mouseReleased == true ) {
     ballX= ballX+vx;
     ballY = ballY-vy;
-    print(vx);
-    println(vy);
+//    print(vx);
+//    println(vy);
   }
 }
 void golfBallb () {

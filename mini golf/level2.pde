@@ -7,6 +7,7 @@ void level2() {
   strokeWeight(15);
   if (player1 == true) {
     stroke(red);
+    print("red");
   }
   if (player1 == false) {
     stroke(blue);
@@ -40,13 +41,13 @@ void level2() {
   if ( ballX > 350 && ballY > 250 && ballY < 600 && ballX <355) {
     vx = vx * -0.8;
   }
-    if ( ballX < 450 && ballY > 250 && ballY < 600 && ballX > 400) {
+    if ( ballX < 450 && ballY > 250 && ballY < 600 && ballX > 425) {
     vx = vx * -0.8;
   }
-  if ( ballY < 300 && ballX > 375 && ballX < 425) {
+  if ( ballY < 350 && ballX > 375 && ballX < 425) {
    vy = vy * -0.8; 
   }
-    if ( ballY < 600 && ballX > 375 && ballX < 425) {
+    if ( ballY < 625 && ballX > 375 && ballX < 425) {
    vy = vy * -0.8; 
   }
 
@@ -56,7 +57,15 @@ void level2() {
 
 
   if (dist(ballX, ballY, 400, 150) <50 && player1 == false) {
-    mode = level2;
+    ballX = 400;
+    ballY = 650;
+    player1 = false;
+    mouseReleased = false;
+    mousepressed = false;
+    vx = 0;
+    vy = 0;
+     player1 = true;
+     mode = level3;
   }
 
 

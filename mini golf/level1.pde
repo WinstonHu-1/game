@@ -32,12 +32,22 @@ void level1() {
     vy = vy *-0.8;
   }
    if (dist(ballX, ballY, 400, 150) <50 && player1 == false) {
-   mode = level2;
-   player1 = true;
+    
+     print("set true");
+         ballX = 400;
+    ballY = 650;
+    player1 = false;
+    mouseReleased = false;
+    mousepressed = false;
+    vx = 0;
+    vy = 0;
+     player1 = true;
+     mode = level2;
+   
  
  }
 
-  if (dist(ballX, ballY, 400, 150) <50) {
+  if (dist(ballX, ballY, 400, 150) <50 && player1 == true) {
     fill(0);
     ballX = 400;
     ballY = 650;
