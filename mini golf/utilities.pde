@@ -20,21 +20,13 @@ void golfBall () {
   if (mouseReleased == true ) {
     ballX= ballX+vx;
     ballY = ballY-vy;
+     timer = timer-1;
 //    print(vx);
 //    println(vy);
   }
 }
-void golfBallb () {
 
-  circle(ballX, ballY, 50);
-  if (mouseReleased == true ) {
-    
-    ballX= ballX+vx;
-    ballY = ballY-vy;
-    print(vx);
-    println(vy);
-  }
-}
+
   void distanceX() {
     if (mouseX <400) {
       dx =dist(mouseX, 650, ballX, ballY);
@@ -51,3 +43,19 @@ void golfBallb () {
     } else if ( mouseY == 650)
       dy = 0;
   }
+  
+  void redwin() {
+    if (redscore == 3) {
+      mode = GAMEOVER;
+      
+    }
+    
+  }
+    void bluewin() {
+      if (bluescore == 3){
+        mode = GAMEOVER;
+      }
+      
+    }
+    
+  

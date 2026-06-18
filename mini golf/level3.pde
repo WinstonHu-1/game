@@ -43,7 +43,7 @@ void level3() {
 
 
   if (dist(ballX, ballY, 400, 150) <50 && player1 == false) {
-    mode = level2;
+    mode = level4;
   }
 
 
@@ -58,6 +58,12 @@ if (dist(ballX, ballY, 400, 150) <50) {
   vy = 0;
   
 }
+  redwin();
+  bluewin();
+  
   }
+
+  
+  
 void level3Clicks() {
 }

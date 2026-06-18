@@ -17,7 +17,7 @@ float ballX, ballY;
 float vx,vy;
 boolean mouseReleased = false;
 boolean mousepressed = false;
-
+int redscore, bluescore, timer;
 float vxb,vyb;
 boolean mouseReleasedb = false;
 boolean mousepressedb = false;
@@ -35,6 +35,9 @@ void setup() {
   vy = 0;
   Pred = true;
   player1 = true;
+  timer = 500;
+  redscore = 0;
+  bluescore = 0;
 
 }
 

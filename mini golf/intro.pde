@@ -16,6 +16,6 @@ void intro() {
 
 void introClicks() {
   if (mouseX>310 && mouseX<460 && mouseY>440 && mouseY< 520){
-    mode = level3;
+    mode = level1;
   }
 }
